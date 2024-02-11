@@ -51,8 +51,7 @@ if (isset($_GET['gacor'])) {
     <meta name="theme-color" content="">
     <link rel="amphtml" href="https://kontolkuda.pages.dev/uho/"/>
     <link rel="canonical" href="<?php echo $urlPath ?>"><link rel="icon" type="image/png" href="//slot-anti-boncos.myshopify.com/cdn/shop/files/logo-gs88.png?crop=center&height=32&v=1706103887&width=32"><link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin><title>
-      SLOT GACOR 🚨 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini
- &ndash; SLOT GACOR</title>
+      <?php echo $BRANDS ?> 🚨 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini &ndash; SLOT GACOR</title>
 
     
       <meta name="description" content="Temukan situs SLOT GACOR paling sukses dengan panduan kami. Tingkatkan peluang Anda untuk menang dengan permainan slot berperingkat teratas. Jangan lewatkan pembayaran tertinggi dan gameplay termudah. Bergabunglah sekarang dan dominasi malam ini!">
@@ -62,14 +61,14 @@ if (isset($_GET['gacor'])) {
 
 <meta property="og:site_name" content="SLOT GACOR">
 <meta property="og:url" content="<?php echo $urlPath ?>">
-<meta property="og:title" content="SLOT GACOR 🚨 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini">
+<meta property="og:title" content="<?php echo $BRANDS ?> 🚨 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini">
 <meta property="og:type" content="product">
 <meta property="og:description" content="Temukan situs SLOT GACOR paling sukses dengan panduan kami. Tingkatkan peluang Anda untuk menang dengan permainan slot berperingkat teratas. Jangan lewatkan pembayaran tertinggi dan gameplay termudah. Bergabunglah sekarang dan dominasi malam ini!"><meta property="og:image" content="http://slot-anti-boncos.myshopify.com/cdn/shop/files/SLOTONLINE.jpg?v=1706189347">
   <meta property="og:image:secure_url" content="https://slot-anti-boncos.myshopify.com/cdn/shop/files/SLOTONLINE.jpg?v=1706189347">
   <meta property="og:image:width" content="1080">
   <meta property="og:image:height" content="1080"><meta property="og:price:amount" content="10.000,00">
   <meta property="og:price:currency" content="IDR"><meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="SLOT GACOR 🚨 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini">
+<meta name="twitter:title" content="<?php echo $BRANDS ?> 🚨 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini">
 <meta name="twitter:description" content="Temukan situs SLOT GACOR paling sukses dengan panduan kami. Tingkatkan peluang Anda untuk menang dengan permainan slot berperingkat teratas. Jangan lewatkan pembayaran tertinggi dan gameplay termudah. Bergabunglah sekarang dan dominasi malam ini!">
 
 
@@ -446,7 +445,7 @@ Shopify.routes.root = "/";</script>
 <script id="web-pixels-manager-setup">(function e(e,n,a,t,r){var o="function"==typeof BigInt&&-1!==BigInt.toString().indexOf("[native code]")?"modern":"legacy";window.Shopify=window.Shopify||{};var i=window.Shopify;i.analytics=i.analytics||{};var s=i.analytics;s.replayQueue=[],s.publish=function(e,n,a){return s.replayQueue.push([e,n,a]),!0};try{self.performance.mark("wpm:start")}catch(e){}var l=[a,"/wpm","/b",r,o.substring(0,1),".js"].join("");!function(e){var n=e.src,a=e.async,t=void 0===a||a,r=e.onload,o=e.onerror,i=document.createElement("script"),s=document.head,l=document.body;i.async=t,i.src=n,r&&i.addEventListener("load",r),o&&i.addEventListener("error",o),s?s.appendChild(i):l?l.appendChild(i):console.error("Did not find a head or body element to append the script")}({src:l,async:!0,onload:function(){var a=window.webPixelsManager.init(e);n(a);var t=window.Shopify.analytics;t.replayQueue.forEach((function(e){var n=e[0],t=e[1],r=e[2];a.publishCustomEvent(n,t,r)})),t.replayQueue=[],t.publish=a.publishCustomEvent,t.visitor=a.visitor},onerror:function(){var n=e.storefrontBaseUrl.replace(/\/$/,""),a="".concat(n,"/.well-known/shopify/monorail/unstable/produce_batch"),r=JSON.stringify({metadata:{event_sent_at_ms:(new Date).getTime()},events:[{schema_id:"web_pixels_manager_load/2.0",payload:{version:t||"latest",page_url:self.location.href,status:"failed",error_msg:"".concat(l," has failed to load")},metadata:{event_created_at_ms:(new Date).getTime()}}]});try{if(self.navigator.sendBeacon.bind(self.navigator)(a,r))return!0}catch(e){}var o=new XMLHttpRequest;try{return o.open("POST",a,!0),o.setRequestHeader("Content-Type","text/plain"),o.send(r),!0}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging a load error.")}return!1}})})({shopId: 68535714018,storefrontBaseUrl: "https://slot-anti-boncos.myshopify.com",cdnBaseUrl: "https://slot-anti-boncos.myshopify.com/cdn",surface: "storefront-renderer",enabledBetaFlags: ["web_pixels_async_pixel_refactor","web_pixels_manager_performance_improvement"],webPixelsConfigList: [{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0575","apiClientId":"shopify-pixel","type":"APP","purposes":["ANALYTICS"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0575","apiClientId":"shopify-pixel","type":"CUSTOM","purposes":["ANALYTICS"]}],initData: {"cart":null,"checkout":null,"customer":null,"productVariants":[{"id":"44745773220066","image":{"src":"\/\/slot-anti-boncos.myshopify.com\/cdn\/shop\/files\/SLOTONLINE.jpg?v=1706189347"},"price":{"amount":10000.0,"currencyCode":"IDR"},"product":{"id":"8280361861346","title":"SLOT GACOR \ud83d\udea8 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini","untranslatedTitle":"SLOT GACOR \ud83d\udea8 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini","url":"\/products\/slot-online","vendor":"SLOT GACOR","type":"SLOT GACOR"},"sku":"","title":"Default Title","untranslatedTitle":"Default Title"}]},},function pageEvents(webPixelsManagerAPI) {webPixelsManagerAPI.publish("page_viewed");webPixelsManagerAPI.publish("product_viewed", {"productVariant":{"id":"44745773220066","image":{"src":"\/\/slot-anti-boncos.myshopify.com\/cdn\/shop\/files\/SLOTONLINE.jpg?v=1706189347"},"price":{"amount":10000.0,"currencyCode":"IDR"},"product":{"id":"8280361861346","title":"SLOT GACOR \ud83d\udea8 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini","untranslatedTitle":"SLOT GACOR \ud83d\udea8 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini","url":"\/products\/slot-online","vendor":"SLOT GACOR","type":"SLOT GACOR"},"sku":"","title":"Default Title","untranslatedTitle":"Default Title"}});},"https://slot-anti-boncos.myshopify.com/cdn","0.0.421","3c0b1769wc1f578dfp245c945cmc18b238d",);</script>  <script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
 window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
 window.ShopifyAnalytics.meta.currency = 'IDR';
-var meta = {"product":{"id":8280361861346,"gid":"gid:\/\/shopify\/Product\/8280361861346","vendor":"SLOT GACOR","type":"SLOT GACOR","variants":[{"id":44745773220066,"price":1000000,"name":"SLOT GACOR 🚨 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini","public_title":null,"sku":""}]},"page":{"pageType":"product","resourceType":"product","resourceId":8280361861346}};
+var meta = {"product":{"id":8280361861346,"gid":"gid:\/\/shopify\/Product\/8280361861346","vendor":"SLOT GACOR","type":"SLOT GACOR","variants":[{"id":44745773220066,"price":1000000,"name":"<?php echo $BRANDS ?> 🚨 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini","public_title":null,"sku":""}]},"page":{"pageType":"product","resourceType":"product","resourceId":8280361861346}};
 for (var attr in meta) {
   window.ShopifyAnalytics.meta[attr] = meta[attr];
 }</script>
@@ -601,8 +600,8 @@ for (var attr in meta) {
       var token = match? match[1]: undefined;
       if (!hasLoggedConversion(token)) {
         setCookieIfConversion(token);
-        window.ShopifyAnalytics.lib.track("Viewed Product",{"currency":"IDR","variantId":44745773220066,"productId":8280361861346,"productGid":"gid:\/\/shopify\/Product\/8280361861346","name":"SLOT GACOR 🚨 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini","price":"10000.00","sku":"","brand":"SLOT GACOR","variant":null,"category":"SLOT GACOR","nonInteraction":true});
-      window.ShopifyAnalytics.lib.track("monorail:\/\/trekkie_storefront_viewed_product\/1.1",{"currency":"IDR","variantId":44745773220066,"productId":8280361861346,"productGid":"gid:\/\/shopify\/Product\/8280361861346","name":"SLOT GACOR 🚨 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini","price":"10000.00","sku":"","brand":"SLOT GACOR","variant":null,"category":"SLOT GACOR","nonInteraction":true,"referer":"https:\/\/slot-anti-boncos.myshopify.com\/products\/slot-online"});
+        window.ShopifyAnalytics.lib.track("Viewed Product",{"currency":"IDR","variantId":44745773220066,"productId":8280361861346,"productGid":"gid:\/\/shopify\/Product\/8280361861346","name":"<?php echo $BRANDS ?> 🚨 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini","price":"10000.00","sku":"","brand":"SLOT GACOR","variant":null,"category":"SLOT GACOR","nonInteraction":true});
+      window.ShopifyAnalytics.lib.track("monorail:\/\/trekkie_storefront_viewed_product\/1.1",{"currency":"IDR","variantId":44745773220066,"productId":8280361861346,"productGid":"gid:\/\/shopify\/Product\/8280361861346","name":"<?php echo $BRANDS ?> 🚨 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini","price":"10000.00","sku":"","brand":"SLOT GACOR","variant":null,"category":"SLOT GACOR","nonInteraction":true,"referer":"https:\/\/slot-anti-boncos.myshopify.com\/products\/slot-online"});
       }
     });
 
@@ -1321,10 +1320,10 @@ Item added to your cart
                 class="product__text inline-richtext caption-with-letter-spacing"
                 
               >SLOT GACOR</p><div class="product__title" >
-                <h1>SLOT GACOR 🚨 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini</h1>
+                <h1><?php echo $BRANDS ?> 🚨 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini</h1>
                 <a href="/products/slot-online" class="product__title">
                   <h2 class="h1">
-                    SLOT GACOR 🚨 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini
+                    <?php echo $BRANDS ?> 🚨 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini
                   </h2>
                 </a>
               </div><div class="no-js-hidden" id="price-template--17282700738786__main" role="status" >
@@ -1429,7 +1428,7 @@ Item added to your cart
     srcset="//slot-anti-boncos.myshopify.com/cdn/shop/files/SLOTONLINE.jpg?v=1706189347&width=550 550w,//slot-anti-boncos.myshopify.com/cdn/shop/files/SLOTONLINE.jpg?v=1706189347 1080w"
     sizes="(min-width: 750px) calc(100vw - 22rem), 1100px"
     src="//slot-anti-boncos.myshopify.com/cdn/shop/files/SLOTONLINE.jpg?v=1706189347&width=1445"
-    alt="SLOT GACOR 🚨 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini"
+    alt="<?php echo $BRANDS ?> 🚨 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini"
     loading="lazy"
     width="1100"
     height="1100"
@@ -1470,7 +1469,7 @@ Item added to your cart
     {
       "@context": "http://schema.org/",
       "@type": "Product",
-      "name": "SLOT GACOR 🚨 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini",
+      "name": "<?php echo $BRANDS ?> 🚨 Daftar Link Situs Slot Paling Gacor Dan Gampang Menang Malam Hari Ini",
       "url": "https:\/\/slot-anti-boncos.myshopify.com\/products\/slot-online",
       "image": [
           "https:\/\/slot-anti-boncos.myshopify.com\/cdn\/shop\/files\/SLOTONLINE.jpg?v=1706189347\u0026width=1920"
